@@ -1,0 +1,239 @@
+{% extends 'nav.html' %}
+    {%block content%}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+            <div class="home">
+                <div class='page' style="position: relative; top: 10px;">
+                    <p>หน้าแรก</p>
+                </div>
+                <div class='content'style="position: relative; top: 10px;">
+                    <div class='left-content'>
+                    <br>
+                        <div class='content-header'>
+                            ข้อมูลทั่วไป
+                        </div>
+                        <div class="conten-data">
+                        {% for post in posts %}
+                            <table>
+                                <tr>
+                                    <td>เลขที่ตำแหน่ง :</td>
+                                    <td>{{post.id}}</td>
+                                </tr>
+                                <tr>
+                                    <td>ชื่อ-สกุล(TH) :</td>
+                                    <td>{{post.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>สายงาน :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ตำแหน่งงาน :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ตำแหน่งทางวิชาการ :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ตำแหน่งบริหาร :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่เข้าทำงาน :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่บรรจุ :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สถานะปฎิบัติงาน :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันเดือนปีเกิด :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สัญชาติ :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ศาสนา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เบอร์โทร :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>อีเมล ม.พะเยา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>อีเมล ส่วนตัว :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ที่อยู่ปัจจุบัน :</td>
+                                    
+                                </tr>
+                            </table>
+                        {% endfor%}
+                        </div>
+                    </div>
+                    <div class='center-content'>
+                        <div class="content-header1">
+                            ข้อวุฒิการศึกษา
+                        </div>
+                        <div class="content-data">
+                        <table>
+                                <tr>
+                                    <td>ปริญญาตรี </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วุฒิการศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สาขาวิชา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สถานศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>จังหวัด :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ประเทศ :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่เข้าศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่จบการศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เกรดเฉลี่ย :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เกียรตินิยม :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วุฒิที่ใช้บรรจุ :</td>
+                                    
+                                </tr>
+                            </table>
+                            <br>
+                            <table>
+                                <tr>
+                                    <td>ปริญญาโท </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วุฒิการศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สาขาวิชา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สถานศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>จังหวัด :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ประเทศ :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่เข้าศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่จบการศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เกรดเฉลี่ย :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เกียรตินิยม :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วุฒิที่ใช้บรรจุ :</td>
+                                    
+                                </tr>
+                                <br>
+                            </table>
+                        </div>
+                    </div>
+                    <br>
+                    <div class='right-content'>
+                        <div class="content-data">
+                        <table>
+                                <tr>
+                                    <td>ปริญญาเอก </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วุฒิการศึกษา </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สาขาวิชา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>สถานศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>จังหวัด :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>ประเทศ :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่เข้าศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วันที่จบการศึกษา :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เกรดเฉลี่ย :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>เกียรตินิยม :</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>วุฒิที่ใช้บรรจุ :</td>
+                                    
+                                </tr>
+                            </table>
+                    </div>
+                </div>
+            </div>
+    {% endblock %}

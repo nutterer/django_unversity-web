@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/login.css' %}">
+</head>
+
+<body>
+    <div class="layout">
+        <div Class="content">
+            <div Class="AllLogo">
+                {% load static %}
+                <img src="{% static 'photo/ICT.png' %}" class="logo">
+
+            </div>
+            <div Class="frombox">
+                <div Class="form"> {% comment %}ส่วนเข้าสู่ระบบ{% endcomment %}
+                    <div id="login">
+                        <div class="container" style='position: relative;left: 80px; top: -70px;'>
+                            <form id="login-form" class="form" action="" method="POST">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="username">Username:</label><br>
+                                    <input type="text" name="username" id="username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label><br>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="remember-me"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+
+                                    <input type="submit" name="Login" class="btn btn-outline-dark " style='position : relative;left :5.7cm; width: 3cm; top: -35px;' value="Login">
+                                </div>
+                                <div id="register-link" class="text-right">
+                                </div>
+                            </form>
+                            <div>
+                                {% for message in messages %}
+                                <p id='message'>{{message}}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>{% comment %}ส่วนเข้าสู่ระบบ{% endcomment %}
+    </div>
+    </div>
+    <div class='borderbottom'>
+        <p>หน่วยบุคคล คณะเทคโนโลยีสารสนเทศและการสื่อสาร มหาวิทยาลัยพะเยา</p>
+    </div>
+    </div>
+</body>
+
+</html>
